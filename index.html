@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <title>Influenza Virus Evolution</title>
+    <meta name="author" content="Riccardo Scalco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Influenza, Evolution, Rohlin, Entropy, Scalco, Burioni, Casartelli, Data Visualization">
+    <meta name="description" content="Project started in collaboration with the Department of Physics at the University of Parma. The project is under development and its goal is the creation af a visualization tool for the research activities on the time evolution of Influenza viruses.">
+    <!--<link rel="alternate" href="/atom.xml" type="application/atom+xml" title="eidogram">-->
+    <!--<link rel="icon" href="/favicon.ico">-->
+    
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+    <link rel='stylesheet' href='./css/nprogress.css'/>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <!--link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">-->
+    <!--<link rel="prefetch" href="http://eidogram.com/projects/piemVisCont/"/>-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/underscore-min.js" charset="utf-8"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    
+  </head>
+
+  <body>
+
+    <div id="page-wrapper">
+      <h1>Influenza Virus Evolution</h1>
+      <div>
+        Please <a href="#" onclick="document.getElementById('fileInput').click(); return false;" />select</a> a fasta file
+        <input type="file" id="fileInput" style="visibility: hidden;">
+      </div>
+      <a href="./file.fasta">Download</a> an example of fasta file (2.5 Mb).
+
+      <div id="graph"></div>
+    </div>
+
+    <script src='./js/nprogress.js'></script>
+    <script src="./js/clusterfck.js" charset="utf-8"></script>
+    <script src="./js/text.js"></script>
+
+  </body>
+
+</html>
